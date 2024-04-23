@@ -13,6 +13,7 @@ public:
     B &operator=(const B &obj)
     {
         A::operator=(obj);
+        // ...
     }
 };
 // 派生类对象可以赋值给基类对象
