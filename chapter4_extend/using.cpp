@@ -15,7 +15,7 @@ protected:
     int c;
 };
 
-class B : private A
+class B : public A
 {
 public:
     void f1(char); // 隐藏基类的所有重载
@@ -37,6 +37,7 @@ int main()
     B b;
     // b.f1();
     b.f1();
+    b.A::f1();
 }
 
 // 静态成员被本类和派生类所共享
