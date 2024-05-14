@@ -1,3 +1,4 @@
+#include <string.h>
 template <typename T1, typename T2 = double>
 T1 max(T1 a, T2 b)
 {
@@ -42,6 +43,25 @@ template <typename T = double> // 有默认值的模板，默认值靠右
 void fun()
 {
 }
+
+template <>
+char *max(char *a, char *b) // 特化模板
+{
+    return strcmp(a, b) < 0 ? b : a;
+}
+
+inline char *max(char *a, char *b) // 普通 max 函数
+{
+    return strcmp(a, b) < 0 ? b : a;
+}
+
+/*
+调用顺序：
+普通函数
+模板特化函数
+调用模板函数，选择能够精确匹配的函数
+多个函数都差不多多，产生二义性错误
+*/
 
 int main()
 {
