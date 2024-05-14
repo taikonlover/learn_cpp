@@ -63,6 +63,13 @@ inline char *max(char *a, char *b) // 普通 max 函数
 多个函数都差不多多，产生二义性错误
 */
 
+class B
+{
+public:
+    template <typename T>
+    void func(T a) {} // 成员函数模板，不能是虚函数
+};
+
 int main()
 {
     int a = 1;
