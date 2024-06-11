@@ -51,6 +51,7 @@ Person &Person::operator=(const Person &other)
     strcpy(name, other.name);
     age = other.age;
     cout << "class Person copy operator\n";
+    return *this;
 }
 
 Person test(Person a) // copy constructor
