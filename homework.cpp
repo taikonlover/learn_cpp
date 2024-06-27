@@ -63,7 +63,7 @@ Person test(Person a) // copy constructor
 int main()
 {
     Person obj1("lihua", 19); // constructor
-    Person obj2;
+    Person obj2(obj1);
     obj2 = obj1; // copy operator
     Person obj3;
     cout << "1:";

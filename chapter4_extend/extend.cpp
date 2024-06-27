@@ -25,6 +25,10 @@ class A final // final 关键字让其他类不能被继承
 {
 };
 
+class C final : Y // C 不能派生
+{
+};
+
 // class B : A
 // {
 // }
@@ -33,6 +37,6 @@ class A final // final 关键字让其他类不能被继承
 基类的公有成员和保护成员变成私有成员，基类的 private 和不可访问成员都不可访问
 保护派生
 基类的公有成员和保护成员变成保护成员，基类的 private 和不可访问成员都不可访问
-class 缺省情况下为 public 派生
-struct 缺省情况下为 private 派生
+class 缺省情况下为 private 派生
+struct 缺省情况下为 public 派生
 */

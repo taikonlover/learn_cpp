@@ -3,7 +3,7 @@
 using namespace std;
 void f()
 {
-    static int i; // 静态变量生存期从声明开始，一直到程序结束
+    static int i = 0; // 静态变量生存期从声明开始，一直到程序结束
     int j = 0;
     i += 2;
     j += 2;

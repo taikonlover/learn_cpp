@@ -21,12 +21,12 @@ int main()
     int a = 1;
     int *p = &a;
     int *&rp = p;
-    // int &*ra = a; 错误
+    // int &*ra = a; 错误，不能定义引用的指针
     int b[10], *c[10];
     int(&ra)[10] = b; // 数组的引用
     int &bb = b[0];
-    int *(&rpa)[10] = c; // 指针的引用
-    // int &ia[10] = b; 错误
+    int *(&rpa)[10] = c; // 指针数组的引用
+    // int &ia[10] = b; 错误，不能定义引用数组
     ra[3] = 0;
     rpa[3] = &i;
     int anInt = 10;
@@ -44,4 +44,6 @@ int main()
     double &&rr = r + 10;
     r = 1;
     cout << r << ' ' << rr;
+    static int q[] = {1, 2, 3};
+    constexpr int *rpc = q + 1;
 }

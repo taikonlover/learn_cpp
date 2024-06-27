@@ -50,7 +50,7 @@ class D : public B
 public:
     C c1, c2;
     A a0, a4;
-    D() : a4(4), c2(2), c1(1), B(1)
+    D() : a4(4), c2(2), c1(1), B(1) // 通过初始化列表指定基类的构造函数
     {
         cout << "Construct D-5" << endl;
     }

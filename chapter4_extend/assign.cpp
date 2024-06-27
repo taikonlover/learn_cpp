@@ -8,7 +8,9 @@ class A
 class B : public A
 {
 public:
-    B(const B &obj) : A(obj){};
+    int a;
+    B() : A() {}
+    B(const B &obj) : A(obj){}; // 拷贝构造函数
 
     B &operator=(const B &obj)
     {
@@ -24,7 +26,9 @@ public:
 
 int main()
 {
-    A a;
+    B a;
     A *pa = &a;
     B *pb = static_cast<B *>(pa); // 强制类型转换，基类指针转换为派生类指针
+    pb->a = 1;
+    cout << pb->a;
 }
