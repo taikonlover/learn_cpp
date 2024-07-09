@@ -2,6 +2,13 @@
 #include <iomanip>
 using namespace std;
 
+/**
+ * 格式：
+ * ostream& manip_name(ostream& stream){
+ *     ...
+ *     return stream;
+ * }
+ */
 ostream &money(ostream &output) // 操纵符
 {
     return output << "\t$";

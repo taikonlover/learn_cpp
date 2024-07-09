@@ -26,7 +26,7 @@ public:
 };
 /*
 类模板需要显式实例化
-类模板不允许使用
+否则，类模板不允许使用
 */
 
 template <typename T>
@@ -44,8 +44,8 @@ void fun()
 {
 }
 
-template <>
-char *max(char *a, char *b) // 特化模板
+template <> // 特化模板
+char *max(char *a, char *b)
 {
     return strcmp(a, b) < 0 ? b : a;
 }
@@ -57,7 +57,7 @@ inline char *max(char *a, char *b) // 普通 max 函数
 
 /*
 调用顺序：
-普通函数
+普通函数, 会进行参数类型转换
 模板特化函数
 调用模板函数，选择能够精确匹配的函数
 多个函数都差不多多，产生二义性错误

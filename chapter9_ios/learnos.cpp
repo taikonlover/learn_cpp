@@ -27,7 +27,7 @@ int main()
     cout.setf(ios::skipws | ios::left);
     cout.setf(ios::oct, ios::basefield); // 消除后面一个参数标志位，再把前面的位置 1
     char ch = cout.fill();               // 返回当前的填充字符
-    cout.precision(10);                  // 设置精度
+    cout.precision(10);                  // 设置精度，默认为 6 位，scientifc 输出时是有效数字，fixed 为小数点后的数位
     cout.precision();                    // 返回当前精度
     cout.fill('*');
     cout.setf(ios::left | ios::scientific | ios::showpoint, ios::adjustfield | ios::floatfield);

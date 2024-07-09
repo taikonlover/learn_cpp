@@ -4,7 +4,7 @@ class X
 
 public:
     X(int a);      // 可以把 a 转换为 X 类
-    operator int() // int 的类型转换，没有函数返回值有 return 语句，返回对应类的对象
+    operator int() // int 的类型转换，没有函数返回值有 return 语句，返回对应类的对象，将 类 X 转化为类y
     {
         return a;
     }

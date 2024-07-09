@@ -18,7 +18,7 @@ int main()
     cin.putback('a');
     // getline() 会把分隔符丢弃，get() 会把分隔符留在流里，
     // 如果要读入的数据量超过实际读入的数据量，getline 会出现错误， get 不会
-    // cout << (x&y) << endl; x&y 要用()改变运算顺序
+    // cout << (x&y) << endl; x&y 要用()改变运算顺序, 因为 << 优先级高于&
 }
 
 /*

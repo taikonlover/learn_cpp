@@ -34,9 +34,14 @@ int main()
     } //可以捕获任意类型的异常
 }
 
-// void temperature(int t) throw(char *, int, float) {} // 声明可能产生的异常，throw() 表示不抛出异常
+// void temperature(int t) throw(char *, int, float) {} // 声明可能产生的异常，throw() 表示不抛出异常，如果抛出异常会调用默认异常处理程序终止程序
 void temperature() noexcept {}             // 不会抛出异常
 void temperature(char a) noexcept(true) {} // noexcept(bool) true 表示不会产生异常，flase 可能会产生异常
                                            /*
                                            编译器不会对抛出异常进行检测
                                            */
+
+/**
+ * throw(), noexcept, noexcept(true) 表是不会抛出异常，如果抛出异常会调用默认异常处理程序终止程序
+ * noexcept(false) 标识会抛出异常(任何类型均可)
+ */

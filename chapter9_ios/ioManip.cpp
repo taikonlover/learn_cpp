@@ -11,4 +11,6 @@ int main()
     cout.fill('*');
     cout << setfill('*');
     cout << setw(10) << setfill('*') << showbase << uppercase << showpoint << 10.0;
+    cout << setiosflags(ios::showbase | ios::uppercase | ios::showpoint);   // 与cout.setf()等价
+    cout << resetiosflags(ios::showbase | ios::uppercase | ios::showpoint); // 与 cout.unsetf() 等价
 }

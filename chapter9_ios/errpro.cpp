@@ -10,9 +10,9 @@ int main()
     ios_base::failbit; // I/O 操作失败，流没有被破坏
     ios_base::badbit;  // 系统级故障，无法恢复
     cin.rdstate();
-    cin.eof();
-    cin.setstate(ios::goodbit);
-    cin.clear();
-    cin.clear(ios::goodbit);
+    cin.eof();                  // 使用cin.eof() 判断或者直接if(cin)判断
+    cin.setstate(ios::goodbit); // 设置标识位
+    cin.clear();                // 清除状态位
+    cin.clear(ios::goodbit);    //设置/清除指定状态位
     cin.eofbit;
 }
