@@ -35,7 +35,7 @@ double circle::getR()
     return this->r;
 }
 
-class myclass // class 缺省为public
+class myclass // class 缺省为private
 {
 private: // 外部不可见
     // myclass A;

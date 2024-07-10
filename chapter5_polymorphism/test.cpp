@@ -25,15 +25,20 @@ int main()
 {
     A *pA, a;
     B *pB, b;
+    C *pC;
     C c;
     D d;
     pA = &a;
-    pA->f(1); //调用A::f
+    pA->f(1); //调用::f
     pB = &b;
-    pB->f(1); //调用A::f
+    pB->f(1); //调用B::f
     pB = &c;
-    pB->f(1); //调用A::f
+    pB->f(1); //调用C::f
     pB = &d;
-    pB->f(1); //调用A::f
+    pB->f(1); //调用D::f
+    pA = &d;
+    pA->f(1);
+    pC = &d;
+    pC->f(1);
     return 0;
 }

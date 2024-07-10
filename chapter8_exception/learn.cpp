@@ -42,6 +42,6 @@ void temperature(char a) noexcept(true) {} // noexcept(bool) true 表示不会�
                                            */
 
 /**
- * throw(), noexcept, noexcept(true) 表是不会抛出异常，如果抛出异常会调用默认异常处理程序终止程序
+ * throw(), noexcept, noexcept(true) 表示不会抛出异常，如果抛出异常会调用默认异常处理程序终止程序
  * noexcept(false) 标识会抛出异常(任何类型均可)
  */

@@ -10,6 +10,7 @@ int main()
 {
     double a = M_PI;
     double b = 3.1576543;
+    cout.fill('-');
     cout << setprecision(4) << a << ' ' << b << '\n'; // setprecision(n), setw(n) 在 iomanip 库中，保留n位有效数字
     cout << setw(7) << a << ' ' << b << '\n';         // setw(n) 占 n 位只对后一个数字有效
     cout << setiosflags(ios::left) << setw(7) << a << '|' << setw(7) << b << '|'

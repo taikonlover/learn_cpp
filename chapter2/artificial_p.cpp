@@ -28,7 +28,7 @@ int main()
     // 智能指针能相互赋值，除了 unique_ptr
     int x = 9;
     int *ip = new int(1);
-    shared_ptr<int> p3;
+    // shared_ptr<int> p3;
     shared_ptr<int> sp(new int(8));
     // sp = &x 错误
     // sp = ip 错误

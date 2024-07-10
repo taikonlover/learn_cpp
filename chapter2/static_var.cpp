@@ -19,7 +19,7 @@ int main()
     string str1;
     char *str2;
     cin >> str1;
-    // cin.ignore(10);
+    cin.ignore(10);
     cin.getline(str2, 100);
     cout << str1 << str2;
     /*
@@ -28,6 +28,5 @@ int main()
     micro visial
     str1 = "hello"
     str2 = ""
-
     */
 }

@@ -10,9 +10,9 @@ int main()
     ofstream fout("clients.txt", ios::out);
     ios::in;
     ios::out;
-    ios::app; // append
-    ios::ate; // 打开已有文件，并将读指针置于文件尾，如果不存在则打开出错
-    ios::trunc;
+    ios::app;   // append
+    ios::ate;   // 打开已有文件，并将读指针置于文件尾，如果不存在则打开出错
+    ios::trunc; // 如果文件已经存在则将内容清空
     ios::binary;
     // ios::noreplace;
     // ios::nocreate;

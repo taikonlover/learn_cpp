@@ -21,8 +21,7 @@ int main()
 {
     X x;
     cout << x(1);
-    x.show(); // 输出：1
-    // x()(2);
+    x.show();
     x.show();
     return 0;
 }

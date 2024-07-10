@@ -43,7 +43,7 @@ public:
     }
 };
 
-double goods::totalWeight = 0; //   类的静态成员初始化需要在类外进行
+float goods::totalWeight = 0; //   类的静态成员初始化需要在类外进行
 
 class integer
 {
@@ -63,7 +63,6 @@ public:
 };
 
 int integer::staticint = 0;
-float goods::totalWeight = 0;
 
 int main()
 {

@@ -72,7 +72,4 @@ public:
 int main()
 {
     D d;
-    /**
-     * 输出 EAEABCD
-     */
 }

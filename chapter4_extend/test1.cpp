@@ -41,6 +41,7 @@ int main()
 {
     D d;
     d.B::b = 1; // 错误，b 产生二义性
+    cout << 1;
 }
 
 // #include <iostream>

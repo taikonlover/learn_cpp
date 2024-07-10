@@ -46,4 +46,5 @@ int main()
     cout << r << ' ' << rr;
     static int q[] = {1, 2, 3};
     constexpr int *rpc = q + 1;
+    cout << *rpc << '\n';
 }

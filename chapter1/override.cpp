@@ -48,6 +48,7 @@ int main()
      * const int x = 10;
      * g(&x); 调用 g(const int *)
      */
+    g(&y);
 }
 
 /**
