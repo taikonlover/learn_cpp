@@ -15,4 +15,6 @@ int main()
     cout.unsetf(ios::showpoint);
     cout << double(n) << ' ' << a << '\n'
          << endl;
+
+    cout.fill('*');
 }
